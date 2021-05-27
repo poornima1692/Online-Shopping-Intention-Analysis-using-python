@@ -23,7 +23,7 @@ data
 x = data.iloc[:, [5, 6]].values
 x.shape
 
-## test and training data
+## Now applying the K-elbow method to determine the number of clustering groups:
 from sklearn.cluster import KMeans
 
 wcss = []
@@ -42,7 +42,7 @@ plt.xlabel('No. of Clusters')
 plt.ylabel('wcss')
 plt.show()
 
-
+## K MEANS CLUSTERING 
 # According to the graph above, the maximum curvature is at the second index, that is, the number of optimal clustering groups for the duration of the product and the bounce rates is 2.
 
 
